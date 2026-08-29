@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 import { ArrowRight, BookOpen, CalendarDays, Camera, CheckCircle2, Clock3, Globe, Headphones, Heart, Mail, MapPin, Menu, MessageCircle, Phone, Plane, PlayCircle, ShieldCheck, Star, UserRound, Users, X } from 'lucide-react'
 
 const tours = [
@@ -17,7 +18,95 @@ function LeadFields() {
   </div>
 }
 
-function Modal({ tour, onClose }) { const [sent, setSent] = useState(false); return <div className="modal-overlay" role="presentation" onMouseDown={e => e.target === e.currentTarget && onClose()}><section className="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button className="modal-close" aria-label="Đóng" onClick={onClose}><X /></button><h2 id="modal-title">{sent ? 'Đã nhận yêu cầu của bạn' : 'Nhận tư vấn nhanh'}</h2><p>{sent ? 'Seven Travel sẽ liên hệ tư vấn trong vòng 15 phút.' : 'Để lại thông tin, chuyên viên Seven Travel sẽ gửi lịch trình và báo giá phù hợp.'}</p>{sent ? <div className="success"><CheckCircle2 /><p>Cảm ơn bạn đã quan tâm đến hành trình<br /><strong>{tour}</strong>.</p><button onClick={onClose}>Hoàn tất</button></div> : <form onSubmit={e => { e.preventDefault(); setSent(true) }}><label>Họ và tên<input required placeholder="Nguyễn Minh Anh" /></label><label>Số điện thoại<input required type="tel" placeholder="09xx xxx xxx" /></label><label>Tour quan tâm<input readOnly value={tour} /></label><button type="submit">Gửi yêu cầu tư vấn</button><small><ShieldCheck /> Thông tin của bạn được bảo mật tuyệt đối</small></form>}</section></div> }
+function Modal({ tour, onClose }) {
+  const [sent, setSent] = useState(false)
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    const form = e.currentTarget
+
+    const templateParams = {
+      name: form.name.value,
+      phone: form.phone.value,
+      tour,
+      time: new Date().toLocaleString('vi-VN')
+    }
+
+    emailjs.send(
+      'service_wk6eeji',
+      'template_pyrs5ls',
+      templateParams,
+      'xHtamYa9Uskp20MK5'
+    )
+    .then(() => {
+      setSent(true)
+      form.reset()
+    })
+    .catch((error) => {
+      console.error(error)
+      alert('Gửi yêu cầu thất bại. Vui lòng thử lại!')
+    })
+  }
+
+  return (
+    <div className="modal-overlay" role="presentation" onMouseDown={e => e.target === e.currentTarget && onClose()}>
+      <section className="modal" role="dialog" aria-modal="true">
+
+        <button className="modal-close" onClick={onClose}>
+          <X />
+        </button>
+
+        <h2>{sent ? 'Đã nhận yêu cầu của bạn' : 'Nhận tư vấn nhanh'}</h2>
+
+        <p>
+          {sent
+            ? 'Seven Travel sẽ liên hệ tư vấn trong vòng 15 phút.'
+            : 'Để lại thông tin, chuyên viên Seven Travel sẽ gửi lịch trình và báo giá phù hợp.'
+          }
+        </p>
+
+        {sent ? (
+          <div className="success">
+            <CheckCircle2 />
+            <p>
+              Cảm ơn bạn đã quan tâm đến hành trình
+              <br />
+              <strong>{tour}</strong>
+            </p>
+            <button onClick={onClose}>Hoàn tất</button>
+          </div>
+        ) : (
+          <form onSubmit={sendEmail}>
+            <label>
+              Họ và tên
+              <input name="name" required placeholder="Nguyễn Minh Anh" />
+            </label>
+
+            <label>
+              Số điện thoại
+              <input name="phone" required type="tel" placeholder="09xx xxx xxx" />
+            </label>
+
+            <label>
+              Tour quan tâm
+              <input value={tour} readOnly />
+            </label>
+
+            <button type="submit">
+              Gửi yêu cầu tư vấn
+            </button>
+
+            <small>
+              <ShieldCheck />
+              Thông tin của bạn được bảo mật tuyệt đối
+            </small>
+          </form>
+        )}
+      </section>
+    </div>
+  )
+}
 
 export default function App() {
   const [selectedTour, setSelectedTour] = useState(''); const [emailSent, setEmailSent] = useState(false); const [mobileMenu, setMobileMenu] = useState(false)
