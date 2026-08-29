@@ -74,3 +74,98 @@
         padding-right: 50px;
     }
 }
+
+
+/* =================================================
+   SevenTravel Consultation Modal - Final Adjustment
+   ================================================= */
+
+/* Fix close button position */
+.modal-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 42px !important;
+    height: 42px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Modal layout */
+.modal {
+    position: relative;
+}
+
+
+/* Form fields */
+.modal input,
+.modal select {
+    width: 100%;
+    height: 58px;
+    box-sizing: border-box;
+
+    border-radius: 12px;
+    border: 2px solid #94a3b8;
+
+    background: #f8fafc;
+
+    padding: 0 18px;
+
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+
+/* Dropdown */
+.modal select {
+    appearance: none;
+    -webkit-appearance: none;
+
+    padding-right: 48px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24'%3E%3Cpath fill='%23334155' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 22px;
+}
+
+
+/* Only submit button */
+.modal form > button {
+    width: 100%;
+    height: 54px;
+
+    border: none;
+    border-radius: 12px;
+
+    margin-top: 12px;
+
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+/* Responsive */
+@media(max-width:768px) {
+
+    .modal input,
+    .modal select {
+        height: 52px;
+        font-size: 16px;
+    }
+
+    .modal-close {
+        width: 36px !important;
+        height: 36px;
+        top: 12px;
+        right: 12px;
+    }
+}
