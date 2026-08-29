@@ -20,16 +20,18 @@ function LeadFields() {
 
 function Modal({ tour, onClose }) {
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault()
+    setSending(true)
 
     const form = e.currentTarget
 
     const templateParams = {
       name: form.name.value,
       phone: form.phone.value,
-      tour,
+      tour: form.customTour.value || form.tour.value,
       time: new Date().toLocaleString('vi-VN')
     }
 
@@ -41,10 +43,12 @@ function Modal({ tour, onClose }) {
     )
     .then(() => {
       setSent(true)
+      setSending(false)
       form.reset()
     })
     .catch((error) => {
       console.error(error)
+      setSending(false)
       alert('Gửi yêu cầu thất bại. Vui lòng thử lại!')
     })
   }
@@ -90,11 +94,27 @@ function Modal({ tour, onClose }) {
 
             <label>
               Tour quan tâm
-              <input value={tour} readOnly />
+
+              <select name="tour">
+                <option>{tour}</option>
+                <option>Thành Đô – Cửu Trại Câu</option>
+                <option>Bắc Kinh – Thượng Hải</option>
+                <option>Đại Lý – Lệ Giang – Shangrila</option>
+                <option>Quế Lâm – Dương Sóc</option>
+                <option>Khác - Tôi muốn tư vấn tuyến riêng</option>
+              </select>
             </label>
 
-            <button type="submit">
-              Gửi yêu cầu tư vấn
+            <label>
+              Tuyến bạn quan tâm khác (nếu có)
+              <input
+                name="customTour"
+                placeholder="Ví dụ: Tây Tạng, Trương Gia Giới..."
+              />
+            </label>
+
+            <button type="submit" disabled={sending}>
+              {sending ? '⏳ Đang gửi yêu cầu...' : 'Gửi yêu cầu tư vấn'}
             </button>
 
             <small>
