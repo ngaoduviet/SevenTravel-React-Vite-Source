@@ -1,3 +1,29 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/sanpham",
+      "destination": "https://seven-travel-tour-catalog.vercel.app/sanpham"
+    },
+    {
+      "source": "/sanpham/:path*",
+      "destination": "https://seven-travel-tour-catalog.vercel.app/sanpham/:path*"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://seven-travel-tour-catalog.vercel.app/_next/:path*"
+    },
+    {
+      "source": "/images/seven-travel-logo.png",
+      "destination": "https://seven-travel-tour-catalog.vercel.app/images/seven-travel-logo.png"
+    },
+    {
+      "source": "/images/seven-travel-logo-white.png",
+      "destination": "https://seven-travel-tour-catalog.vercel.app/images/seven-travel-logo-white.png"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
