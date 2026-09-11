@@ -10,7 +10,7 @@
 .modal-overlay{position:fixed;inset:0;z-index:100;background:rgba(2,15,30,.72);backdrop-filter:blur(3px);display:grid;place-items:center;padding:20px}.modal{position:relative;width:min(540px,100%);background:#fff;color:#0f172a;border:2px solid #0b3d6d;border-radius:20px;padding:28px;box-shadow:0 30px 90px rgba(2,15,30,.42)}.modal h2{font-size:25px;color:#0b3d6d;margin:0 35px 8px 0}.modal>p{color:#475569;line-height:1.5}.modal-close{position:absolute;right:16px;top:16px;border:0;background:transparent;color:#334155}.modal form{display:grid;gap:13px}.modal form label{display:grid;gap:6px;font-size:13px;font-weight:700;color:#334155}.modal input{height:44px;border-radius:8px;background:#f8fafc;border:1px solid #94a3b8;color:#0f172a;padding:0 12px}.modal form>button,.success button{border:0;border-radius:8px;background:var(--orange);color:#fff;height:46px;margin-top:5px;font-weight:800}.modal small{display:flex;align-items:center;justify-content:center;gap:6px;color:#64748b}.success{text-align:center;display:grid;justify-items:center;gap:15px;padding:10px}.success>svg{width:54px;height:54px;color:#16a34a}.success button{min-width:150px}
 @media(max-width:1100px){.site-header{gap:18px}.site-header nav{gap:16px}.site-header nav a{font-size:12px}.tour-grid{overflow-x:auto;display:flex;padding-bottom:14px;scroll-snap-type:x mandatory}.tour-card{min-width:245px;scroll-snap-align:start}.trust-grid{grid-template-columns:repeat(2,1fr);gap:24px}.trust-grid article:nth-child(2){border:0}.offer-block{margin:45px 24px}.offer-copy{padding:42px}.footer-grid{grid-template-columns:1.3fr repeat(2,1fr)}.footer-news{grid-column:2/4}}
 @media(max-width:1040px){.site-header nav{display:none;position:absolute;top:82px;left:0;right:0;height:auto;background:#fff;padding:12px 18px;box-shadow:0 10px 30px rgba(15,23,42,.12)}.site-header nav.open{display:grid}.site-header nav a{padding:12px 0;border-bottom:1px solid var(--line)}.header-actions{display:none}.menu{display:block;margin-left:auto}}
-(max-width:760px){body{padding-bottom:66px}.site-header{height:66px;padding:0 17px}.brand{width:175px;height:60px}.brand img{width:165px}.site-header nav{display:none;position:absolute;top:66px;left:0;right:0;height:auto;background:#fff;padding:12px 18px;box-shadow:0 10px 30px rgba(15,23,42,.12)}.site-header nav.open{display:grid}.site-header nav a{padding:12px 0;border-bottom:1px solid var(--line)}.header-actions{display:none}.menu{display:block;margin-left:auto}.hero{height:auto;min-height:720px;background-position:58% center}.hero-shade{background:linear-gradient(180deg,rgba(3,20,38,.76),rgba(3,20,38,.48) 42%,rgba(3,20,38,.3))}.hero-content{padding:36px 18px 28px}.visual-hero h1{gap:9px;font-size:35px;line-height:1.02;letter-spacing:-.035em}.hero-destinations{font-size:14px}.hero-selling{font-size:13px}.visual-hero i{padding:0 2px}.hero-hotline{font-size:14px;padding:10px 16px}.lead-card{margin-top:20px;padding:18px 14px}.lead-fields{grid-template-columns:1fr}.lead-fields label{padding:9px 11px}.lead-cta{height:50px}.micro{gap:8px;font-size:10px}.tours-section{padding:39px 18px 30px}.section-head{display:block}.section-head h2{font-size:27px}.section-head p{margin-top:10px;font-size:14px}.tour-grid{margin-right:-18px}.tour-card{min-width:282px}.trust{padding:28px 18px}.trust>h2{font-size:17px;text-align:center;display:block;line-height:1.5}.trust>h2 svg{display:inline}.trust-grid{grid-template-columns:1fr;padding:22px}.trust-grid article,.trust-grid article:nth-child(2){padding:16px 0;border-right:0;border-bottom:1px solid var(--line)}.trust-grid article:last-child{border-bottom:0}.offer-block{margin:32px 16px;grid-template-columns:1fr;border-radius:20px}.offer-photo{height:210px;background:linear-gradient(0deg,var(--orange),transparent 45%),url('/assets/offer.jpg') center/cover}.offer-copy{padding:24px 20px 28px}.offer-copy h2{font-size:30px}.offer-copy form{display:grid}.offer-copy button{justify-content:center}.stories{padding:20px 18px 45px}.stories-heading{align-items:start}.stories-heading h2{font-size:28px}.stories-heading>a{font-size:0}.story-grid{display:flex;overflow-x:auto;margin-right:-18px;padding-bottom:12px}.story-grid article{min-width:285px}.story-grid article>img{height:190px}.story-grid h3{min-height:0}.site-footer{padding:40px 20px 90px}.footer-grid{grid-template-columns:1fr 1fr;gap:35px 22px}.footer-brand{grid-column:1/3}.footer-news{grid-column:1/3}.footer-bottom{display:grid;gap:20px}.footer-bottom>div{flex-wrap:wrap}.floating-social{right:10px;top:auto;bottom:78px;transform:none;gap:8px}.floating-social a{width:46px;height:46px;border-width:5px}.mobile-lead{position:fixed;display:flex;align-items:center;justify-content:center;gap:8px;z-index:40;left:12px;right:72px;bottom:10px;width:auto;height:50px;border:0;border-radius:12px;color:#fff;background:linear-gradient(90deg,#ff5a0a,#f97316);font-weight:800;box-shadow:0 8px 28px rgba(249,115,22,.4)}}
+@media(max-width:760px){body{padding-bottom:66px}.site-header{height:66px;padding:0 17px}.brand{width:175px;height:60px}.brand img{width:165px}.site-header nav{display:none;position:absolute;top:66px;left:0;right:0;height:auto;background:#fff;padding:12px 18px;box-shadow:0 10px 30px rgba(15,23,42,.12)}.site-header nav.open{display:grid}.site-header nav a{padding:12px 0;border-bottom:1px solid var(--line)}.header-actions{display:none}.menu{display:block;margin-left:auto}.hero{height:auto;min-height:720px;background-position:58% center}.hero-shade{background:linear-gradient(180deg,rgba(3,20,38,.76),rgba(3,20,38,.48) 42%,rgba(3,20,38,.3))}.hero-content{padding:36px 18px 28px}.visual-hero h1{gap:9px;font-size:35px;line-height:1.02;letter-spacing:-.035em}.hero-destinations{font-size:14px}.hero-selling{font-size:13px}.visual-hero i{padding:0 2px}.hero-hotline{font-size:14px;padding:10px 16px}.lead-card{margin-top:20px;padding:18px 14px}.lead-fields{grid-template-columns:1fr}.lead-fields label{padding:9px 11px}.lead-cta{height:50px}.micro{gap:8px;font-size:10px}.tours-section{padding:39px 18px 30px}.section-head{display:block}.section-head h2{font-size:27px}.section-head p{margin-top:10px;font-size:14px}.tour-grid{margin-right:-18px}.tour-card{min-width:282px}.trust{padding:28px 18px}.trust>h2{font-size:17px;text-align:center;display:block;line-height:1.5}.trust>h2 svg{display:inline}.trust-grid{grid-template-columns:1fr;padding:22px}.trust-grid article,.trust-grid article:nth-child(2){padding:16px 0;border-right:0;border-bottom:1px solid var(--line)}.trust-grid article:last-child{border-bottom:0}.offer-block{margin:32px 16px;grid-template-columns:1fr;border-radius:20px}.offer-photo{height:210px;background:linear-gradient(0deg,var(--orange),transparent 45%),url('/assets/offer.jpg') center/cover}.offer-copy{padding:24px 20px 28px}.offer-copy h2{font-size:30px}.offer-copy form{display:grid}.offer-copy button{justify-content:center}.stories{padding:20px 18px 45px}.stories-heading{align-items:start}.stories-heading h2{font-size:28px}.stories-heading>a{font-size:0}.story-grid{display:flex;overflow-x:auto;margin-right:-18px;padding-bottom:12px}.story-grid article{min-width:285px}.story-grid article>img{height:190px}.story-grid h3{min-height:0}.site-footer{padding:40px 20px 90px}.footer-grid{grid-template-columns:1fr 1fr;gap:35px 22px}.footer-brand{grid-column:1/3}.footer-news{grid-column:1/3}.footer-bottom{display:grid;gap:20px}.footer-bottom>div{flex-wrap:wrap}.floating-social{right:10px;top:auto;bottom:78px;transform:none;gap:8px}.floating-social a{width:46px;height:46px;border-width:5px}.mobile-lead{position:fixed;display:flex;align-items:center;justify-content:center;gap:8px;z-index:40;left:12px;right:72px;bottom:10px;width:auto;height:50px;border:0;border-radius:12px;color:#fff;background:linear-gradient(90deg,#ff5a0a,#f97316);font-weight:800;box-shadow:0 8px 28px rgba(249,115,22,.4)}}
 
 
 /* SevenTravel Modal Responsive Fix (merged) */
@@ -168,5 +168,569 @@
         height: 36px;
         top: 12px;
         right: 12px;
+    }
+}
+
+
+/* =================================================
+   SevenTravel - Mobile experience refinement
+   ================================================= */
+@media (max-width: 760px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        padding-bottom: calc(78px + env(safe-area-inset-bottom));
+    }
+
+    .site-header {
+        position: sticky;
+        top: 0;
+        height: 68px;
+        padding: 0 16px;
+        gap: 12px;
+        box-shadow: 0 4px 18px rgba(15, 23, 42, .08);
+    }
+
+    .brand {
+        width: 154px;
+        height: 54px;
+    }
+
+    .brand img {
+        width: 150px;
+        height: 50px;
+    }
+
+    .menu {
+        width: 44px;
+        height: 44px;
+        margin-left: auto;
+        padding: 0;
+        border-radius: 12px;
+        background: #f1f5f9;
+        display: grid;
+        place-items: center;
+    }
+
+    .menu svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .site-header nav {
+        top: 68px;
+        max-height: calc(100dvh - 68px);
+        padding: 8px 16px 16px;
+        overflow-y: auto;
+        border-top: 1px solid var(--line);
+        box-shadow: 0 18px 34px rgba(15, 23, 42, .16);
+    }
+
+    .site-header nav a {
+        min-height: 48px;
+        padding: 12px 4px;
+        border-bottom: 1px solid var(--line);
+        font-size: 16px;
+        font-weight: 750;
+    }
+
+    .site-header nav a:last-child {
+        border-bottom: 0;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 0;
+        background-position: 61% center;
+    }
+
+    .hero-shade {
+        background: linear-gradient(180deg, rgba(3, 20, 38, .9), rgba(3, 20, 38, .67) 52%, rgba(3, 20, 38, .72));
+    }
+
+    .hero-content {
+        padding: 34px 16px 32px;
+    }
+
+    .visual-hero h1 {
+        gap: 7px;
+        max-width: 100%;
+        margin-bottom: 16px;
+        font-size: clamp(2rem, 9vw, 2.45rem);
+        line-height: 1.04;
+        letter-spacing: -.035em;
+    }
+
+    .hero-destinations {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+    .hero-selling {
+        margin-top: 7px;
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .hero-hotline {
+        min-height: 44px;
+        margin-top: 15px;
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .lead-card {
+        width: 100%;
+        margin-top: 20px;
+        padding: 18px 14px 14px;
+        border-radius: 16px;
+    }
+
+    .lead-card h2 {
+        margin-bottom: 12px;
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .lead-fields {
+        grid-template-columns: 1fr;
+        gap: 9px;
+    }
+
+    .lead-fields label {
+        padding: 8px 11px;
+    }
+
+    .lead-fields label > span {
+        font-size: 12px;
+    }
+
+    .lead-fields select {
+        min-height: 34px;
+        font-size: 15px;
+    }
+
+    .lead-cta {
+        min-height: 50px;
+        height: auto;
+        padding: 11px 14px;
+        font-size: 16px;
+    }
+
+    .micro {
+        flex-wrap: wrap;
+        gap: 4px 10px;
+        margin-top: 9px;
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .tours-section {
+        padding: 40px 16px 34px;
+    }
+
+    .section-head {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .section-head h2 {
+        margin-top: 6px;
+        font-size: 28px;
+        line-height: 1.18;
+    }
+
+    .section-head p {
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+    .tour-grid {
+        gap: 14px;
+        margin-right: -16px;
+        padding-right: 16px;
+        scrollbar-width: none;
+    }
+
+    .tour-grid::-webkit-scrollbar,
+    .story-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tour-card {
+        min-width: min(82vw, 310px);
+        border-radius: 16px;
+    }
+
+    .tour-image {
+        height: 190px;
+    }
+
+    .tour-body {
+        min-height: 178px;
+        padding: 17px;
+    }
+
+    .tour-body h3 {
+        min-height: 0;
+        font-size: 17px;
+    }
+
+    .tour-body p {
+        font-size: 13px;
+    }
+
+    .tour-body button {
+        min-height: 46px;
+        font-size: 15px;
+    }
+
+    .trust {
+        padding: 30px 16px 36px;
+    }
+
+    .trust > h2 {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .trust > h2 > svg {
+        display: block;
+        width: 28px;
+        height: 28px;
+        margin: 0 auto 7px;
+    }
+
+    .trust > h2 span {
+        display: none;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 8px 20px;
+        border-radius: 18px;
+    }
+
+    .trust-grid article,
+    .trust-grid article:nth-child(2) {
+        min-height: 86px;
+        padding: 16px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .trust-grid article:last-child {
+        border-bottom: 0;
+    }
+
+    .trust-grid h3 {
+        font-size: 15px;
+    }
+
+    .trust-grid p {
+        font-size: 13px;
+    }
+
+    .offer-block {
+        grid-template-columns: 1fr;
+        min-height: 0;
+        margin: 30px 16px 38px;
+        border-radius: 22px;
+    }
+
+    .offer-photo {
+        height: 190px;
+        background: linear-gradient(0deg, var(--orange), transparent 46%), url('/assets/offer.jpg') center/cover;
+    }
+
+    .offer-copy {
+        padding: 24px 20px 28px;
+    }
+
+    .offer-copy > span {
+        font-size: 12px;
+        line-height: 1.45;
+        letter-spacing: .12em;
+    }
+
+    .offer-copy h2 {
+        margin: 12px 0;
+        font-size: 30px;
+        line-height: 1.15;
+    }
+
+    .offer-copy p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .offer-copy form {
+        display: grid;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .offer-copy label,
+    .offer-copy input,
+    .offer-copy button {
+        min-height: 52px;
+    }
+
+    .offer-copy button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .stories {
+        padding: 10px 16px 44px;
+    }
+
+    .stories-heading {
+        align-items: start;
+        margin-bottom: 20px;
+    }
+
+    .stories-heading h2 {
+        margin-top: 7px;
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .stories-heading > a {
+        display: none;
+    }
+
+    .story-grid {
+        display: flex;
+        gap: 14px;
+        margin-right: -16px;
+        padding-right: 16px;
+        padding-bottom: 8px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+
+    .story-grid article {
+        min-width: min(84vw, 320px);
+        border-radius: 17px;
+        scroll-snap-align: start;
+    }
+
+    .story-grid article > img {
+        height: 190px;
+    }
+
+    .story-grid article > div {
+        padding: 19px;
+    }
+
+    .story-grid h3 {
+        min-height: 0;
+        font-size: 19px;
+    }
+
+    .story-grid p,
+    .story-grid a {
+        font-size: 14px;
+    }
+
+    .site-footer {
+        padding: 40px 20px calc(28px + env(safe-area-inset-bottom));
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px 22px;
+    }
+
+    .footer-brand,
+    .footer-news,
+    .footer-grid > div:nth-child(4) {
+        grid-column: 1 / -1;
+    }
+
+    .footer-logo {
+        width: 210px;
+        height: 70px;
+    }
+
+    .footer-brand p {
+        max-width: 520px;
+        margin: 10px 0 18px;
+        font-size: 14px;
+    }
+
+    .footer-grid h3 {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .footer-grid a,
+    .footer-news p {
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .footer-grid > div:nth-child(4) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px 22px;
+    }
+
+    .footer-grid > div:nth-child(4) h3 {
+        grid-column: 1 / -1;
+        margin-bottom: 3px;
+    }
+
+    .footer-news form {
+        margin-top: 10px;
+    }
+
+    .footer-news input,
+    .footer-news button {
+        height: 50px;
+    }
+
+    .footer-bottom {
+        justify-items: center;
+        gap: 18px;
+        margin-top: 34px;
+        padding-top: 22px;
+        text-align: center;
+    }
+
+    .footer-bottom > div {
+        justify-content: center;
+        gap: 7px;
+    }
+
+    .footer-bottom b {
+        padding: 7px 8px;
+        font-size: 11px;
+    }
+
+    .floating-social {
+        right: 9px;
+        top: auto;
+        bottom: calc(74px + env(safe-area-inset-bottom));
+        transform: none;
+        gap: 7px;
+    }
+
+    .floating-social a {
+        width: 43px;
+        height: 43px;
+        border-width: 4px;
+    }
+
+    .floating-social .messenger img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .floating-social .zalo {
+        font-size: 12px;
+    }
+
+    .mobile-lead {
+        left: 10px;
+        right: 64px;
+        bottom: calc(9px + env(safe-area-inset-bottom));
+        min-height: 52px;
+        height: auto;
+        padding: 10px 12px;
+        border-radius: 13px;
+        font-size: 15px;
+    }
+
+    .modal-overlay {
+        align-items: end;
+        padding: 12px 10px 0;
+    }
+
+    .modal {
+        width: 100%;
+        max-height: calc(100dvh - 12px);
+        padding: 24px 18px calc(22px + env(safe-area-inset-bottom));
+        overflow-y: auto;
+        border-width: 1px;
+        border-bottom: 0;
+        border-radius: 22px 22px 0 0;
+    }
+
+    .modal h2 {
+        margin-right: 42px;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .modal > p {
+        margin: 8px 0 16px;
+        font-size: 15px;
+    }
+
+    .modal form {
+        gap: 11px;
+    }
+
+    .modal form label {
+        gap: 5px;
+        font-size: 14px;
+    }
+
+    .modal input,
+    .modal select {
+        height: 50px;
+        border-width: 1px;
+        border-radius: 10px;
+        padding: 0 14px;
+        font-size: 16px;
+    }
+
+    .modal form > button {
+        min-height: 50px;
+        height: auto;
+        margin-top: 5px;
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+
+    .modal small {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .visual-hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .micro i {
+        display: none;
+    }
+
+    .micro span {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-grid {
+        gap: 28px 16px;
+    }
+
+    .mobile-lead {
+        font-size: 14px;
     }
 }
