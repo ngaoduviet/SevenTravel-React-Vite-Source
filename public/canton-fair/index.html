@@ -363,11 +363,8 @@
     .document-link small { color: var(--muted); font-weight: 600; }
 
     .experience-section { padding: 76px 0; background: #eef4f8; }
-    .experience-head { display: grid; grid-template-columns: 1.05fr .95fr; gap: 52px; align-items: end; margin-bottom: 28px; }
+    .experience-head { margin-bottom: 28px; }
     .experience-head .section-head { margin: 0; }
-    .experience-intro { padding: 4px 0 4px 24px; border-left: 4px solid var(--orange); }
-    .experience-intro strong { display: block; margin-bottom: 7px; color: var(--blue); font-family: Inter, sans-serif; font-size: 1.08rem; }
-    .experience-intro p { margin: 0; color: var(--muted); }
     .experience-gallery { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-auto-rows: 238px; gap: 18px; }
     .experience-card { position: relative; overflow: hidden; min-width: 0; margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 14px 36px rgba(4,35,64,.09); }
     .experience-card:nth-child(1) { grid-column: span 7; grid-row: span 2; }
@@ -490,7 +487,7 @@
     }
 
     @media (max-width: 980px) {
-      .journey-grid, .included-grid, .cta-grid, .faq-grid, .finder-card, .lead-grid, .experience-head { grid-template-columns: 1fr; }
+      .journey-grid, .included-grid, .cta-grid, .faq-grid, .finder-card, .lead-grid { grid-template-columns: 1fr; }
       .metric-grid { grid-template-columns: 1fr 1fr; }
       .tour-grid { grid-template-columns: 1fr; max-width: 720px; }
       .tour-card.featured { transform: none; }
@@ -745,10 +742,6 @@
           <div class="section-head">
             <span class="eyebrow">Hình ảnh đoàn thực tế</span>
             <h2>Trải nghiệm thật<br>từ các kỳ Canton Fair</h2>
-          </div>
-          <div class="experience-intro">
-            <strong>Tư liệu từ các kỳ hội chợ 134, 136 và 139</strong>
-            <p>Hình ảnh thực tế từ hành trình đường bộ, không gian triển lãm, điểm tham quan và các dịch vụ dành cho đoàn.</p>
           </div>
         </div>
         <div class="experience-gallery" aria-label="Hình ảnh đoàn khách tham dự Canton Fair">
