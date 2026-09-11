@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Tour Canton Fair 140 | Seven Travel">
   <meta name="twitter:description" content="Đi đúng Đợt – Gặp đúng nhà cung cấp.">
   <meta name="twitter:image" content="https://www.seventravel.vn/canton-fair/assets/og-canton-fair-140.jpg">
-  <link rel="icon" href="/canton-fair/assets/seven-travel-logo.png" type="image/png">
+  <link rel="icon" href="/canton-fair/assets/favicon-seven-travel.png" type="image/png" sizes="256x256">
   <link rel="preload" as="image" href="/canton-fair/assets/canton-fair-complex.webp" type="image/webp" media="(min-width: 681px)">
   <link rel="preload" as="image" href="/canton-fair/assets/canton-fair-complex-mobile.webp" type="image/webp" media="(max-width: 680px)">
   <script type="application/ld+json">
@@ -250,13 +250,34 @@
     .hero-card strong { display: block; color: var(--blue); font-family: Inter, sans-serif; font-size: 1.2rem; }
     .hero-card small { color: var(--muted); }
 
-    .countdown-wrap { margin-top: -1px; background: var(--orange); color: #fff; }
-    .countdown { min-height: 94px; display: grid; grid-template-columns: 1.5fr repeat(4, .55fr); align-items: center; gap: 18px; }
-    .countdown-title strong { display: block; font-family: Inter, sans-serif; font-size: 1.25rem; }
-    .countdown-title span { opacity: .86; font-size: .9rem; }
-    .timebox { text-align: center; border-left: 1px solid rgba(255,255,255,.32); }
-    .timebox b { display: block; font-size: 1.65rem; line-height: 1; }
-    .timebox small { font-size: .74rem; text-transform: uppercase; letter-spacing: .08em; opacity: .82; }
+    .countdown-wrap { padding: 22px 0; background: #eef4f8; }
+    .countdown {
+      min-height: 118px;
+      display: grid;
+      grid-template-columns: minmax(250px, 1.4fr) repeat(4, minmax(92px, .55fr));
+      align-items: center;
+      gap: 12px;
+      padding: 16px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--blue-deep), #0b4e85);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 24px;
+      box-shadow: 0 18px 45px rgba(5, 43, 80, .18);
+    }
+    .countdown-title { padding: 0 16px; }
+    .countdown-title strong { display: block; font-family: Inter, sans-serif; font-size: 1.22rem; }
+    .countdown-title span { display: block; margin-top: 4px; color: rgba(255,255,255,.72); font-size: .9rem; }
+    .timebox {
+      min-height: 84px;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 16px;
+    }
+    .timebox b { display: block; color: var(--orange); font-size: 2rem; line-height: 1; font-variant-numeric: tabular-nums; }
+    .timebox small { margin-top: 8px; color: rgba(255,255,255,.82); font-size: .7rem; text-transform: uppercase; letter-spacing: .12em; }
 
     .highlights { background: var(--gray); }
     .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
@@ -299,14 +320,6 @@
     .tour-note { margin-top: 26px; color: var(--muted); font-size: .9rem; }
     .package-link { display: inline-flex; justify-content: center; margin-top: 12px; color: var(--blue); font-size: .9rem; font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
 
-    .trust-strip { padding: 20px 0; color: #fff; background: var(--blue); }
-    .trust-grid { display: grid; grid-template-columns: 1.7fr .7fr .7fr; gap: 20px; align-items: center; }
-    .trust-item { display: flex; align-items: center; gap: 12px; min-height: 46px; }
-    .trust-item + .trust-item { padding-left: 20px; border-left: 1px solid rgba(255,255,255,.2); }
-    .trust-icon { display: grid; place-items: center; flex: 0 0 38px; height: 38px; border-radius: 50%; color: var(--blue-deep); background: var(--orange); font-weight: 900; }
-    .trust-item strong { display: block; font-size: .92rem; }
-    .trust-item span { display: block; color: rgba(255,255,255,.72); font-size: .82rem; }
-
     .finder { padding: 68px 0; background: var(--blue-soft); }
     .finder-card { display: grid; grid-template-columns: 1fr .9fr; gap: 44px; align-items: center; padding: 36px; border: 1px solid #cee2f2; border-radius: 28px; background: #fff; box-shadow: var(--shadow); }
     .finder-card h2 { margin-bottom: 12px; font-size: clamp(2rem, 3.4vw, 3rem); }
@@ -316,7 +329,8 @@
 
     .lead-section { padding: 76px 0; color: #fff; background: linear-gradient(135deg, #07345f, #0b4e85); }
     .lead-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 52px; align-items: center; }
-    .lead-copy h2 { font-size: clamp(2.25rem, 4.5vw, 3.8rem); }
+    .lead-copy h2 { font-size: clamp(2.15rem, 4vw, 3.45rem); }
+    .lead-copy h2 span { display: block; white-space: nowrap; }
     .lead-copy p { color: rgba(255,255,255,.76); }
     .selected-plan { margin: 16px 0 0; padding: 12px 14px; color: var(--blue); background: #eef6fc; border: 1px solid #cfe2f1; border-radius: 12px; font-weight: 800; }
     .form-card .btn[disabled] { opacity: .65; cursor: wait; transform: none; }
@@ -422,14 +436,18 @@
     .privacy { margin: 10px 0 0; color: var(--muted); font-size: .78rem; text-align: center; }
     .success { display: none; margin-top: 14px; padding: 12px 14px; border-radius: 12px; color: #0a5a3b; background: #e9f8f1; font-weight: 700; }
 
-    .faq-grid { display: grid; grid-template-columns: .7fr 1.3fr; gap: 60px; }
+    .faq-grid { display: grid; grid-template-columns: .78fr 1.22fr; gap: 60px; }
     .faq-grid .section-head { position: sticky; top: 112px; }
+    .faq-grid .section-head h2 { font-size: clamp(2rem, 3vw, 2.8rem); white-space: nowrap; }
     .faq-grid details p { padding-right: 0; }
 
-    footer { padding: 54px 0 90px; color: rgba(255,255,255,.72); background: #031f39; }
-    .footer-grid { display: grid; grid-template-columns: 1.2fr .8fr .8fr; gap: 46px; }
-    .footer-logo { width: 250px; height: auto; margin-bottom: 22px; }
-    footer h3 { color: #fff; font-size: 1rem; letter-spacing: .03em; }
+    footer { padding: 62px 0 34px; color: rgba(255,255,255,.72); background: #031f39; }
+    .footer-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(190px, .7fr) minmax(230px, .8fr); gap: clamp(42px, 6vw, 82px); align-items: start; }
+    .footer-brand { max-width: 480px; }
+    .footer-logo { width: 280px; height: auto; margin-bottom: 24px; }
+    .footer-company { margin-bottom: 14px; }
+    .footer-column p { margin-bottom: 0; line-height: 1.8; }
+    footer h3 { margin-bottom: 16px; color: #fff; font-size: 1rem; letter-spacing: .03em; }
     footer p, footer a { font-size: .9rem; }
     footer a:hover { color: var(--orange); }
     .copyright { border-top: 1px solid rgba(255,255,255,.12); margin-top: 38px; padding-top: 20px; font-size: .82rem; }
@@ -451,12 +469,18 @@
       .metric-grid { grid-template-columns: 1fr 1fr; }
       .tour-grid { grid-template-columns: 1fr; max-width: 720px; }
       .tour-card.featured { transform: none; }
-      .trust-grid { grid-template-columns: 1fr; }
-      .trust-item + .trust-item { padding-left: 0; border-left: 0; }
       .document-links { grid-template-columns: 1fr; }
       .phase-panel { grid-template-columns: 1fr; }
       .journey-media, .faq-grid .section-head { position: static; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 760px) {
+      .countdown-wrap { padding: 14px 0; }
+      .countdown { grid-template-columns: repeat(2, 1fr); padding: 14px; gap: 10px; border-radius: 20px; }
+      .countdown-title { grid-column: 1 / -1; padding: 4px 6px 8px; text-align: left; }
+      .timebox { min-height: 76px; }
     }
 
     @media (max-width: 680px) {
@@ -473,9 +497,6 @@
       .hero-media img { height: 340px; border-radius: 22px; }
       .hero-media::before { display: none; }
       .hero-card { left: 12px; bottom: 12px; }
-      .countdown { grid-template-columns: repeat(4, 1fr); padding: 18px 0; gap: 6px; }
-      .countdown-title { grid-column: 1 / -1; text-align: center; margin-bottom: 8px; }
-      .timebox:first-of-type { border-left: 0; }
       .metric-grid, .benefit-grid, .form-grid, .cost-grid { grid-template-columns: 1fr; }
       .phase-tabs { grid-template-columns: 1fr; }
       .phase-tab { padding: 15px 18px; }
@@ -559,14 +580,6 @@
         <div class="timebox"><b id="seconds">--</b><small>Giây</small></div>
       </div>
     </div>
-
-    <section class="trust-strip" aria-label="Thông tin bảo chứng Seven Travel">
-      <div class="container trust-grid">
-        <div class="trust-item"><span class="trust-icon" aria-hidden="true">7</span><div><strong>CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ NGAO DU VIỆT</strong><span>Đơn vị tổ chức và tư vấn hành trình</span></div></div>
-        <div class="trust-item"><span class="trust-icon" aria-hidden="true">☎</span><div><strong><a class="track-phone" href="tel:+84899525777">089 9525 777</a></strong><span>Hotline tư vấn trực tiếp</span></div></div>
-        <div class="trust-item" id="taxIdItem" hidden><span class="trust-icon" aria-hidden="true">✓</span><div><strong id="taxIdValue"></strong><span>Mã số thuế doanh nghiệp</span></div></div>
-      </div>
-    </section>
 
     <section class="section highlights">
       <div class="container metric-grid">
@@ -681,11 +694,10 @@
       <div class="container lead-grid">
         <div class="lead-copy">
           <span class="eyebrow">Nhận lịch trình & báo giá</span>
-          <h2>Chỉ cần tên và số điện thoại</h2>
+          <h2><span>Chỉ cần tên</span><span>và Số điện thoại</span></h2>
           <p>Seven Travel sẽ gọi lại để xác nhận ngành hàng, Đợt đi và gói tour phù hợp. Bạn không cần mở ứng dụng email hay bấm gửi thêm lần nữa.</p>
           <div class="contact-points">
-            <a class="track-zalo" href="https://zalo.me/0899525777" target="_blank" rel="noopener">Zalo tư vấn 1–1: 089 9525 777</a>
-            <a class="track-phone" href="tel:+84899525777">Gọi trực tiếp: 089 9525 777</a>
+            <a class="track-zalo" href="https://zalo.me/0899525777" target="_blank" rel="noopener">ZALO TƯ VẤN 1:1</a>
           </div>
         </div>
         <form class="form-card" id="leadForm" novalidate>
@@ -895,9 +907,9 @@
   <footer>
     <div class="container">
       <div class="footer-grid">
-        <div><img class="footer-logo" src="/canton-fair/assets/seven-travel-logo-white.png" alt="Seven Travel" loading="lazy"><p><strong>CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ NGAO DU VIỆT</strong></p><p>Khám phá thế giới — Ngao du muôn nơi.</p></div>
-        <div><h3>Liên hệ</h3><p><a href="tel:+84899525777">089 9525 777</a><br><a href="mailto:info@seventravel.vn">info@seventravel.vn</a><br><a href="https://www.seventravel.vn" target="_blank" rel="noopener">www.seventravel.vn</a></p></div>
-        <div><h3>Thông tin hội chợ</h3><p>Pazhou Complex<br>382 Yuejiang Middle Road<br>Guangzhou, China</p><p><a href="https://www.cantonfair.org.cn/en-US" target="_blank" rel="noopener">Website Canton Fair chính thức ↗</a></p></div>
+        <div class="footer-brand"><img class="footer-logo" src="/canton-fair/assets/seven-travel-logo-white.png" alt="Seven Travel" loading="lazy"><p class="footer-company"><strong>CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ NGAO DU VIỆT</strong></p><p>Khám phá thế giới — Ngao du muôn nơi.</p></div>
+        <div class="footer-column"><h3>Liên hệ</h3><p><a href="tel:+84899525777">089 9525 777</a><br><a href="mailto:info@seventravel.vn">info@seventravel.vn</a><br><a href="https://www.seventravel.vn" target="_blank" rel="noopener">www.seventravel.vn</a></p></div>
+        <div class="footer-column"><h3>Thông tin hội chợ</h3><p>Pazhou Complex<br>382 Yuejiang Middle Road<br>Guangzhou, China</p><p><a href="https://www.cantonfair.org.cn/en-US" target="_blank" rel="noopener">Website Canton Fair chính thức ↗</a></p></div>
       </div>
       <div class="copyright">© 2026 Seven Travel. Thông tin giá, chuyến bay và lịch trình được xác nhận lại tại thời điểm đăng ký.</div>
     </div>
@@ -968,10 +980,6 @@
         if (config.zaloUrl) document.querySelectorAll('.track-zalo').forEach(link => { link.href = config.zaloUrl; });
         if (config.whatsappUrl) document.querySelectorAll('.track-whatsapp').forEach(link => { link.href = config.whatsappUrl; });
         if (config.messengerUrl) document.querySelectorAll('.track-messenger').forEach(link => { link.href = config.messengerUrl; });
-        if (config.taxId) {
-          document.getElementById('taxIdValue').textContent = 'MST: ' + config.taxId;
-          document.getElementById('taxIdItem').hidden = false;
-        }
       } catch (_) {
         // Các kênh liên hệ mặc định vẫn hoạt động khi cấu hình đo lường chưa được khai báo.
       }
