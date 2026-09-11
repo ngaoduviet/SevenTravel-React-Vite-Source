@@ -30,6 +30,10 @@
       "destination": "/canton-fair/index.html"
     },
     {
+      "source": "/cartonfair",
+      "destination": "/canton-fair/index.html"
+    },
+    {
       "source": "/hoichocanton",
       "destination": "/canton-fair/index.html"
     },
