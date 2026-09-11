@@ -250,7 +250,7 @@
     .hero-card strong { display: block; color: var(--blue); font-family: Inter, sans-serif; font-size: 1.2rem; }
     .hero-card small { color: var(--muted); }
 
-    .countdown-wrap { padding: 30px 0 14px; background: #eef4f8; }
+    .countdown-wrap { padding: 26px 0 8px; background: #eef4f8; }
     .countdown {
       min-height: 126px;
       display: grid;
@@ -280,7 +280,7 @@
     .timebox b { display: block; min-width: 2ch; color: var(--orange); font-size: 2rem; line-height: 1; font-variant-numeric: tabular-nums; }
     .timebox small { margin-top: 8px; color: rgba(255,255,255,.82); font-size: .7rem; text-transform: uppercase; letter-spacing: .12em; }
 
-    .highlights { padding: 18px 0 72px; background: #eef4f8; }
+    .highlights { padding: 10px 0 24px; background: #eef4f8; }
     .metric-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
     .metric {
       position: relative;
@@ -329,7 +329,7 @@
     .tour-note { margin-top: 26px; color: var(--muted); font-size: .9rem; }
     .package-link { display: inline-flex; justify-content: center; margin-top: 12px; color: var(--blue); font-size: .9rem; font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
 
-    .finder { padding: 68px 0; background: var(--blue-soft); }
+    .finder { padding: 24px 0 64px; background: var(--blue-soft); }
     .finder-card { display: grid; grid-template-columns: 1fr .9fr; gap: 44px; align-items: center; padding: 36px; border: 1px solid #cee2f2; border-radius: 28px; background: #fff; box-shadow: var(--shadow); }
     .finder-card h2 { margin-bottom: 12px; font-size: clamp(2rem, 3.4vw, 3rem); }
     .finder-card p { margin-bottom: 0; color: var(--muted); }
@@ -362,13 +362,24 @@
     .document-link { display: grid; gap: 4px; padding: 16px; border: 1px solid #cfe0ec; border-radius: 14px; color: var(--blue); background: #fff; font-weight: 800; }
     .document-link small { color: var(--muted); font-weight: 600; }
 
-    .proof-section { background: #fff; }
-    .proof-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
-    .proof-image { overflow: hidden; border-radius: 28px; box-shadow: var(--shadow); }
-    .proof-image img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-    .proof-caption { padding: 14px 18px; color: #fff; background: var(--blue-deep); font-size: .9rem; }
-    .proof-copy p { color: var(--muted); }
-    .proof-note { padding: 16px; border-left: 4px solid var(--orange); color: var(--blue); background: #fff5e8; font-weight: 700; }
+    .experience-section { padding: 76px 0; background: #eef4f8; }
+    .experience-head { display: grid; grid-template-columns: 1.05fr .95fr; gap: 52px; align-items: end; margin-bottom: 28px; }
+    .experience-head .section-head { margin: 0; }
+    .experience-intro { padding: 4px 0 4px 24px; border-left: 4px solid var(--orange); }
+    .experience-intro strong { display: block; margin-bottom: 7px; color: var(--blue); font-family: Inter, sans-serif; font-size: 1.08rem; }
+    .experience-intro p { margin: 0; color: var(--muted); }
+    .experience-gallery { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-auto-rows: 238px; gap: 18px; }
+    .experience-card { position: relative; overflow: hidden; min-width: 0; margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 14px 36px rgba(4,35,64,.09); }
+    .experience-card:nth-child(1) { grid-column: span 7; grid-row: span 2; }
+    .experience-card:nth-child(2), .experience-card:nth-child(3) { grid-column: span 5; }
+    .experience-card:nth-child(n+4) { grid-column: span 4; }
+    .experience-card img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+    .experience-card:hover img { transform: scale(1.025); }
+    .experience-caption { position: absolute; inset: auto 0 0; display: grid; gap: 4px; padding: 54px 20px 18px; background: linear-gradient(180deg, transparent, rgba(3,31,57,.9)); }
+    .experience-caption strong { color: #fff; font-family: Inter, sans-serif; font-size: 1rem; line-height: 1.4; }
+    .experience-caption span { color: rgba(255,255,255,.78); font-size: .86rem; }
+    .experience-footer { display: flex; align-items: center; justify-content: space-between; gap: 22px; margin-top: 24px; }
+    .experience-note { margin: 0; color: var(--muted); font-size: .86rem; }
 
     .floating-social { position: fixed; right: 18px; bottom: 24px; z-index: 65; display: grid; gap: 10px; }
     .social-float { display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 50%; color: #fff; box-shadow: 0 10px 30px rgba(4,35,64,.24); font-size: .76rem; font-weight: 900; border: 2px solid #fff; }
@@ -450,19 +461,21 @@
     .faq-grid .section-head h2 { font-size: clamp(2rem, 3vw, 2.8rem); white-space: nowrap; }
     .faq-grid details p { padding-right: 0; }
 
-    footer { padding: 58px 0 32px; color: rgba(255,255,255,.72); background: #031f39; }
-    .footer-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(200px, .7fr) minmax(250px, .85fr); gap: clamp(44px, 6vw, 84px); align-items: stretch; }
-    .footer-brand, .footer-column { min-width: 0; display: flex; flex-direction: column; }
-    .footer-brand { max-width: 500px; }
-    .footer-heading { min-height: 112px; display: flex; align-items: flex-start; }
-    .footer-logo { width: min(300px, 100%); height: 94px; object-fit: contain; object-position: left top; margin: 0; }
-    .footer-company { margin: 0 0 12px; line-height: 1.55; }
+    footer { padding: 48px 0 28px; color: rgba(255,255,255,.72); background: #031f39; }
+    .footer-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(210px, .72fr) minmax(270px, .9fr); align-items: stretch; }
+    .footer-brand, .footer-column { min-width: 0; display: flex; flex-direction: column; padding: 0 clamp(24px, 3vw, 48px); }
+    .footer-brand { padding-left: 0; }
+    .footer-column { border-left: 1px solid rgba(255,255,255,.12); }
+    .footer-column:last-child { padding-right: 0; }
+    .footer-heading { min-height: 82px; display: flex; align-items: flex-start; }
+    .footer-logo { width: min(270px, 100%); height: 72px; object-fit: contain; object-position: left top; margin: 0; }
+    .footer-company { max-width: 500px; margin: 0 0 11px; line-height: 1.55; }
     .footer-column p { margin: 0; line-height: 1.8; }
     .footer-column p + p { margin-top: 16px; }
     footer h3 { margin: 0; color: #fff; font-size: 1rem; letter-spacing: .03em; }
     footer p, footer a { font-size: .9rem; }
     footer a:hover { color: var(--orange); }
-    .copyright { border-top: 1px solid rgba(255,255,255,.12); margin-top: 42px; padding-top: 20px; font-size: .82rem; }
+    .copyright { border-top: 1px solid rgba(255,255,255,.12); margin-top: 32px; padding-top: 18px; font-size: .82rem; text-align: center; }
     .mobile-bar { display: none; }
 
     @media (max-width: 1120px) {
@@ -477,25 +490,31 @@
     }
 
     @media (max-width: 980px) {
-      .journey-grid, .included-grid, .cta-grid, .faq-grid, .finder-card, .lead-grid, .proof-grid { grid-template-columns: 1fr; }
+      .journey-grid, .included-grid, .cta-grid, .faq-grid, .finder-card, .lead-grid, .experience-head { grid-template-columns: 1fr; }
       .metric-grid { grid-template-columns: 1fr 1fr; }
       .tour-grid { grid-template-columns: 1fr; max-width: 720px; }
       .tour-card.featured { transform: none; }
       .document-links { grid-template-columns: 1fr; }
+      .experience-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 280px; }
+      .experience-card:nth-child(n) { grid-column: span 1; grid-row: span 1; }
+      .experience-card:first-child { grid-column: 1 / -1; min-height: 380px; }
       .phase-panel { grid-template-columns: 1fr; }
       .journey-media, .faq-grid .section-head { position: static; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
-      .footer-brand { grid-column: 1 / -1; }
-      .footer-brand .footer-heading { min-height: auto; margin-bottom: 22px; }
-      .footer-brand .footer-logo { height: 88px; }
+      .footer-brand { grid-column: 1 / -1; padding: 0 0 30px; border-bottom: 1px solid rgba(255,255,255,.12); }
+      .footer-column { margin-top: 30px; }
+      .footer-column:nth-child(2) { padding-left: 0; border-left: 0; }
+      .footer-brand .footer-heading { min-height: auto; margin-bottom: 16px; }
+      .footer-brand .footer-logo { height: 72px; }
     }
 
     @media (max-width: 760px) {
-      .countdown-wrap { padding: 18px 0 10px; }
+      .countdown-wrap { padding: 16px 0 6px; }
       .countdown { grid-template-columns: repeat(2, 1fr); padding: 14px; gap: 10px; border-radius: 20px; }
       .countdown-title { grid-column: 1 / -1; padding: 3px 8px 9px 18px; text-align: left; }
       .timebox { min-height: 76px; }
-      .highlights { padding: 10px 0 58px; }
+      .highlights { padding: 6px 0 18px; }
+      .finder { padding: 18px 0 52px; }
     }
 
     @media (max-width: 680px) {
@@ -506,6 +525,7 @@
       .nav-inner { min-height: 70px; }
       .nav-links { inset: 70px 14px auto; }
       .section { padding: 68px 0; }
+      .section.highlights { padding: 6px 0 18px; }
       h1 { font-size: clamp(2.65rem, 13vw, 4rem); }
       .hero { padding: 48px 0 60px; }
       .hero-grid { gap: 38px; }
@@ -515,15 +535,25 @@
       .metric-grid, .benefit-grid, .form-grid, .cost-grid { grid-template-columns: 1fr; }
       .metric { min-height: 104px; padding: 20px 20px 20px 24px; }
       .metric b, .metric span { white-space: normal; }
+      .experience-section { padding: 58px 0; }
+      .experience-gallery { grid-template-columns: 1fr; grid-auto-rows: 260px; gap: 14px; }
+      .experience-card:nth-child(n), .experience-card:first-child { grid-column: 1; grid-row: span 1; min-height: 0; }
+      .experience-card:first-child { min-height: 300px; }
+      .experience-caption { padding: 48px 16px 15px; }
+      .experience-footer { align-items: stretch; flex-direction: column; }
+      .experience-footer .btn { width: 100%; }
       .phase-tabs { grid-template-columns: 1fr; }
       .phase-tab { padding: 15px 18px; }
       .phase-panel { padding: 24px 20px; }
       .journey-quote { margin-inline: 12px; }
       .field.full { grid-column: auto; }
-      .footer-grid { grid-template-columns: 1fr; gap: 26px; }
-      .footer-heading { min-height: auto; margin-bottom: 14px; }
-      .footer-brand .footer-heading { margin-bottom: 18px; }
-      .footer-logo { width: 260px; height: 82px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 0; }
+      .footer-brand, .footer-column { padding: 0 0 24px; border-left: 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+      .footer-column { margin-top: 24px; }
+      .footer-column:last-child { padding-bottom: 0; border-bottom: 0; }
+      .footer-heading { min-height: auto; margin-bottom: 12px; }
+      .footer-brand .footer-heading { margin-bottom: 16px; }
+      .footer-logo { width: 248px; height: 68px; }
       footer { padding-bottom: 110px; }
       .mobile-bar { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 70; display: grid; grid-template-columns: .7fr .7fr 1.2fr; gap: 7px; padding: 8px; background: rgba(255,255,255,.96); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 12px 40px rgba(4,35,64,.24); backdrop-filter: blur(12px); }
       .mobile-bar .btn { min-height: 46px; padding: 10px 13px; }
@@ -709,6 +739,51 @@
       </div>
     </section>
 
+    <section class="experience-section" id="doan-thuc-te">
+      <div class="container">
+        <div class="experience-head">
+          <div class="section-head">
+            <span class="eyebrow">Hình ảnh đoàn thực tế</span>
+            <h2>Trải nghiệm thật<br>từ các kỳ Canton Fair</h2>
+          </div>
+          <div class="experience-intro">
+            <strong>Tư liệu từ các kỳ hội chợ 134, 136 và 139</strong>
+            <p>Hình ảnh thực tế từ hành trình đường bộ, không gian triển lãm, điểm tham quan và các dịch vụ dành cho đoàn.</p>
+          </div>
+        </div>
+        <div class="experience-gallery" aria-label="Hình ảnh đoàn khách tham dự Canton Fair">
+          <figure class="experience-card">
+            <img src="/canton-fair/assets/canton-fair-139-pazhou.webp" alt="Đoàn doanh nghiệp tham dự Canton Fair lần thứ 139 tại Quảng Châu" width="1600" height="1200" loading="lazy">
+            <figcaption class="experience-caption"><strong>Đoàn doanh nghiệp tại Canton Fair 139</strong><span>Pazhou · Quảng Châu</span></figcaption>
+          </figure>
+          <figure class="experience-card">
+            <img src="/canton-fair/assets/canton-fair-inside-exhibition.webp" alt="Đoàn khách làm việc bên trong khu triển lãm Canton Fair" width="1600" height="900" loading="lazy">
+            <figcaption class="experience-caption"><strong>Làm việc trực tiếp tại khu triển lãm</strong><span>Không gian giao thương Canton Fair</span></figcaption>
+          </figure>
+          <figure class="experience-card">
+            <img src="/canton-fair/assets/canton-fair-136-canton-tower.webp" alt="Đoàn Canton Fair lần thứ 136 tham quan khu vực Tháp Quảng Châu" width="1600" height="1200" loading="lazy">
+            <figcaption class="experience-caption"><strong>Đoàn Canton Fair 136 tại Tháp Quảng Châu</strong><span>Quảng Châu · Tháng 10/2024</span></figcaption>
+          </figure>
+          <figure class="experience-card">
+            <img src="/canton-fair/assets/canton-fair-134-huu-nghi-border.webp" alt="Đoàn Canton Fair lần thứ 134 tại Cửa khẩu Quốc tế Hữu Nghị" width="1600" height="1200" loading="lazy">
+            <figcaption class="experience-caption"><strong>Hành trình đường bộ qua Cửa khẩu Hữu Nghị</strong><span>Canton Fair 134 · Năm 2023</span></figcaption>
+          </figure>
+          <figure class="experience-card">
+            <img src="/canton-fair/assets/canton-fair-136-arrival.webp" alt="Đoàn khách tập trung trước hành trình tham dự Canton Fair lần thứ 136" width="1600" height="1200" loading="lazy">
+            <figcaption class="experience-caption"><strong>Đoàn tập trung trước hành trình hội chợ</strong><span>Canton Fair 136 · Tháng 10/2024</span></figcaption>
+          </figure>
+          <figure class="experience-card">
+            <img src="/canton-fair/assets/canton-fair-group-dinner.webp" alt="Khách hàng dùng bữa chung trong hành trình Canton Fair" width="1600" height="1200" loading="lazy">
+            <figcaption class="experience-caption"><strong>Bữa ăn chung của đoàn theo chương trình</strong><span>Nghỉ ngơi và kết nối sau ngày làm việc</span></figcaption>
+          </figure>
+        </div>
+        <div class="experience-footer">
+          <p class="experience-note">Hình ảnh được ghi lại trong các hành trình Canton Fair thực tế của đoàn.</p>
+          <a class="btn btn-dark" href="#dang-ky">Nhận tư vấn hành trình 2026 <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
     <section class="lead-section" id="dang-ky">
       <div class="container lead-grid">
         <div class="lead-copy">
@@ -775,23 +850,6 @@
           <a class="document-link" href="https://drive.google.com/file/d/1EcKt5tw8A9QGNiJ9xSPsmybOPYm4D7Z3/view?usp=drive_link" target="_blank" rel="noopener">Hà Nội · Đường bộ <small>Xem lịch trình và điều kiện chi tiết ↗</small></a>
         </div>
       </div>
-    </section>
-
-    <section class="section proof-section" id="doan-thuc-te">
-      <div class="container proof-grid">
-        <figure class="proof-image">
-          <img src="/canton-fair/assets/seven-travel-canton-fair-group.webp" alt="Đoàn khách Seven Travel trong hành trình Canton Fair" width="1000" height="645" loading="lazy">
-          <figcaption class="proof-caption">Hình ảnh đoàn khách thực tế do Seven Travel tổ chức.</figcaption>
-        </figure>
-        <div class="proof-copy">
-          <span class="eyebrow">Tư liệu đoàn thực tế</span>
-          <h2>Đi hội chợ cần một đơn vị hiểu hành trình công việc</h2>
-          <p>Seven Travel ưu tiên thời gian làm việc tại hội chợ, hỗ trợ visa, thẻ vào cửa, di chuyển và điều phối đoàn để khách tập trung tìm nguồn hàng.</p>
-          <div class="proof-note">Bộ ảnh theo từng kỳ hội chợ, Đợt và thời gian sẽ được bổ sung khi có tư liệu đã xác minh. Không sử dụng số liệu hoặc nhận xét khách hàng khi chưa có căn cứ.</div>
-        </div>
-      </div>
-      <!-- Khi có ảnh thật: bổ sung 6–10 ảnh tại đây, mỗi ảnh ghi rõ kỳ hội chợ, Đợt và thời gian. -->
-      <!-- Khi có đánh giá thật: bổ sung 2–3 nhận xét kèm họ tên, doanh nghiệp và sự đồng ý công khai. -->
     </section>
 
     <section class="section phases" id="phase">
