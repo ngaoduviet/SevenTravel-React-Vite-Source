@@ -22,6 +22,14 @@
       "destination": "https://seven-travel-tour-catalog.vercel.app/images/seven-travel-logo-white.png"
     },
     {
+      "source": "/CantonFair",
+      "destination": "/canton-fair/index.html"
+    },
+    {
+      "source": "/hoichocanton",
+      "destination": "/canton-fair/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
