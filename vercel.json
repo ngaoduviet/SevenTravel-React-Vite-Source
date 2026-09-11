@@ -1,22 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "redirects": [
-    {
-      "source": "/CantonFair",
-      "destination": "/hoichocanton",
-      "statusCode": 301
-    },
-    {
-      "source": "/cantonfair",
-      "destination": "/hoichocanton",
-      "statusCode": 301
-    },
-    {
-      "source": "/hoichocanton/",
-      "destination": "/hoichocanton",
-      "statusCode": 301
-    }
-  ],
   "rewrites": [
     {
       "source": "/sanpham",
@@ -39,7 +22,19 @@
       "destination": "https://seven-travel-tour-catalog.vercel.app/images/seven-travel-logo-white.png"
     },
     {
+      "source": "/CantonFair",
+      "destination": "/canton-fair/index.html"
+    },
+    {
+      "source": "/cantonfair",
+      "destination": "/canton-fair/index.html"
+    },
+    {
       "source": "/hoichocanton",
+      "destination": "/canton-fair/index.html"
+    },
+    {
+      "source": "/hoichocanton/",
       "destination": "/canton-fair/index.html"
     },
     {
