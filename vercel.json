@@ -22,6 +22,10 @@
       "destination": "https://seven-travel-tour-catalog.vercel.app/images/seven-travel-logo-white.png"
     },
     {
+      "source": "/images/catalog/:path*",
+      "destination": "https://seven-travel-tour-catalog.vercel.app/images/catalog/:path*"
+    },
+    {
       "source": "/CantonFair",
       "destination": "/canton-fair/index.html"
     },
